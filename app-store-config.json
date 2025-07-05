@@ -1,0 +1,80 @@
+{
+  "appInfo": {
+    "name": "Care Companion",
+    "displayName": "Care Companion - AI Alzheimer's Care",
+    "description": "Revolutionary AI-powered care platform providing comprehensive cognitive support, mood tracking, and 24/7 companionship for Alzheimer's patients and their families.",
+    "longDescription": "Care Companion transforms Alzheimer's care through advanced AI technology, offering personalized cognitive training, mood tracking with empathetic responses, real-time health monitoring, and seamless family communication. Features include voice-powered AI companion, predictive health analytics, comprehensive medication management, emergency response system, and insurance coverage optimization.",
+    "version": "1.0.0",
+    "category": "Medical",
+    "subcategory": "Healthcare & Fitness",
+    "targetAudience": "17+",
+    "languages": ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Chinese", "Japanese"],
+    "platforms": ["Web", "iOS", "Android"],
+    "developer": "Care Companion Technologies",
+    "website": "https://care-companion.replit.app",
+    "supportEmail": "support@carecompanion.com",
+    "privacyPolicy": "https://care-companion.replit.app/privacy",
+    "termsOfService": "https://care-companion.replit.app/terms"
+  },
+  "features": [
+    "AI-Powered 24/7 Companion with Voice Interaction",
+    "Comprehensive Mood Tracking with Empathetic Responses",
+    "Advanced Cognitive Training and Memory Enhancement",
+    "Real-time Health Monitoring and Vital Signs Tracking",
+    "Emergency Response System with Family Notifications",
+    "Medication Management and Adherence Tracking",
+    "Family Dashboard with Progress Analytics",
+    "Insurance Coverage Optimization and Billing",
+    "Multi-language Support with Real-time Translation",
+    "Military-Grade Security and HIPAA Compliance",
+    "Location Tracking with Geofencing Safety",
+    "AI Gaming Platform for Cognitive Enhancement",
+    "Alexa Integration for Hands-Free Operation",
+    "Telemedicine Center with Specialist Matching"
+  ],
+  "keywords": [
+    "alzheimer",
+    "dementia",
+    "elderly care",
+    "ai companion",
+    "cognitive training",
+    "mood tracking",
+    "healthcare",
+    "family care",
+    "memory care",
+    "senior care",
+    "medical monitoring",
+    "emergency response",
+    "voice assistant",
+    "health analytics"
+  ],
+  "screenshots": {
+    "required": [
+      "landing-page.png",
+      "ai-companion.png",
+      "mood-tracking.png",
+      "family-dashboard.png",
+      "cognitive-training.png",
+      "health-monitoring.png"
+    ],
+    "dimensions": {
+      "ios": "1290x2796",
+      "android": "1080x1920",
+      "web": "1920x1080"
+    }
+  },
+  "appIcons": {
+    "sizes": [
+      "16x16",
+      "32x32",
+      "48x48",
+      "64x64",
+      "128x128",
+      "256x256",
+      "512x512",
+      "1024x1024"
+    ],
+    "format": "PNG",
+    "background": "transparent"
+  }
+}

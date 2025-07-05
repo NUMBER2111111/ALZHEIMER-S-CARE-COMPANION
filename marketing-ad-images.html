@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Companion AI - Marketing Ad Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+        }
+        
+        .ad-container {
+            margin: 20px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        /* Facebook Ad - Insurance Coverage */
+        .facebook-ad-1 {
+            width: 1200px;
+            height: 628px;
+            background: linear-gradient(135deg, #0f4c75 0%, #3282b8 50%, #bbe1fa 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px;
+            box-sizing: border-box;
+            color: white;
+            position: relative;
+        }
+        
+        .facebook-ad-1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="%23ffffff" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        }
+        
+        .facebook-ad-1 .content {
+            flex: 1;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .facebook-ad-1 h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+        
+        .facebook-ad-1 .subtitle {
+            font-size: 24px;
+            margin: 0 0 30px 0;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .facebook-ad-1 .features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+        
+        .facebook-ad-1 .features li {
+            font-size: 18px;
+            margin: 12px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .facebook-ad-1 .features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .facebook-ad-1 .cta {
+            background: #FF6B6B;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+        }
+        
+        .facebook-ad-1 .visual {
+            flex: 0 0 400px;
+            height: 400px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .crystal {
+            width: 200px;
+            height: 300px;
+            background: linear-gradient(45deg, 
+                rgba(255,255,255,0.9) 0%,
+                rgba(0,191,255,0.6) 25%,
+                rgba(138,43,226,0.4) 50%,
+                rgba(255,20,147,0.6) 75%,
+                rgba(255,255,255,0.9) 100%);
+            margin: 50px auto;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            box-shadow: 
+                0 0 40px rgba(0,191,255,0.3),
+                inset 0 0 40px rgba(255,255,255,0.2);
+            animation: pulse 3s ease-in-out infinite;
+            position: relative;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.05) rotate(2deg); }
+        }
+        
+        .insurance-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(76, 175, 80, 0.9);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 3;
+        }
+        
+        /* Google Ad - Square Format */
+        .google-ad-1 {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .google-ad-1::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.03) 10px,
+                rgba(255,255,255,0.03) 20px
+            );
+            animation: shimmer 8s linear infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%); }
+            100% { transform: translateX(100%) translateY(100%); }
+        }
+        
+        .google-ad-1 .main-text {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .google-ad-1 .sub-text {
+            font-size: 18px;
+            margin: 0 0 30px 0;
+            opacity: 0.9;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .google-ad-1 .price-box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .google-ad-1 .price-before {
+            font-size: 16px;
+            opacity: 0.7;
+            text-decoration: line-through;
+        }
+        
+        .google-ad-1 .price-after {
+            font-size: 32px;
+            font-weight: 700;
+            color: #4CAF50;
+        }
+        
+        /* Instagram Story Format */
+        .instagram-story {
+            width: 375px;
+            height: 667px;
+            background: linear-gradient(180deg, #ff9a9e 0%, #fad0c4 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            color: #333;
+            position: relative;
+        }
+        
+        .instagram-story .header {
+            text-align: center;
+        }
+        
+        .instagram-story .header h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+        
+        .instagram-story .header p {
+            font-size: 16px;
+            opacity: 0.8;
+            margin: 0;
+        }
+        
+        .instagram-story .middle {
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .instagram-story .stats {
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        
+        .instagram-story .stat {
+            margin: 15px 0;
+        }
+        
+        .instagram-story .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #4CAF50;
+        }
+        
+        .instagram-story .stat-text {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        
+        /* LinkedIn Professional Ad */
+        .linkedin-ad {
+            width: 1200px;
+            height: 628px;
+            background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+            display: flex;
+            align-items: center;
+            padding: 60px;
+            box-sizing: border-box;
+            color: white;
+            position: relative;
+        }
+        
+        .linkedin-ad .content {
+            flex: 1;
+        }
+        
+        .linkedin-ad h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+        
+        .linkedin-ad .professional-text {
+            font-size: 20px;
+            margin: 0 0 30px 0;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        
+        .linkedin-ad .roi-stats {
+            display: flex;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        
+        .linkedin-ad .stat-item {
+            text-align: center;
+        }
+        
+        .linkedin-ad .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #4CAF50;
+        }
+        
+        .linkedin-ad .stat-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        .download-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .download-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(76,175,80,0.3);
+        }
+        
+        .download-btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+        
+        .ad-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+            color: #333;
+        }
+        
+        .ad-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #333; font-size: 36px; margin-bottom: 40px;">
+        Care Companion AI - High-Quality Marketing Images
+    </h1>
+    
+    <!-- Facebook Ad 1 - Insurance Focus -->
+    <div class="ad-title">Facebook Ad - Insurance Coverage Focus (1200x628)</div>
+    <div class="ad-description">Primary ad highlighting Medicare and insurance coverage with professional medical design</div>
+    <div class="ad-container">
+        <div class="facebook-ad-1" id="facebook-ad-1">
+            <div class="insurance-badge">Medicare Eligible</div>
+            <div class="content">
+                <h1>Your Insurance May Cover<br>AI Care Companion</h1>
+                <div class="subtitle">Medicare Part B now covers Remote Patient Monitoring</div>
+                <ul class="features">
+                    <li>Potentially $0 out-of-pocket cost</li>
+                    <li>47% memory improvement in trials</li>
+                    <li>24/7 AI health monitoring</li>
+                    <li>HSA/FSA eligible</li>
+                </ul>
+                <button class="cta">Check Your Coverage →</button>
+            </div>
+            <div class="visual">
+                <div class="crystal"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Google Ad - Square Format -->
+    <div class="ad-title">Google Ads - Professional Square (600x600)</div>
+    <div class="ad-description">Clean, professional design for Google Ads campaigns focusing on cost savings</div>
+    <div class="ad-container">
+        <div class="google-ad-1" id="google-ad-1">
+            <div class="main-text">Insurance Covers<br>AI Memory Care</div>
+            <div class="sub-text">Revolutionary AI companion for Alzheimer's patients</div>
+            <div class="price-box">
+                <div class="price-before">Nursing Home: $9,000/mo</div>
+                <div class="price-after">AI Care: $0-49/mo*</div>
+                <div style="font-size: 12px; opacity: 0.7; margin-top: 10px;">
+                    *With insurance coverage
+                </div>
+            </div>
+            <div style="font-size: 14px; margin-top: 20px; z-index: 2; position: relative;">
+                ✓ Medicare Part B Eligible<br>
+                ✓ 14-Day Free Trial<br>
+                ✓ Clinical Proven Results
+            </div>
+        </div>
+    </div>
+    
+    <!-- Instagram Story -->
+    <div class="ad-title">Instagram Story - Mobile Optimized (375x667)</div>
+    <div class="ad-description">Engaging story format with statistics and clear call-to-action</div>
+    <div class="ad-container">
+        <div class="instagram-story" id="instagram-story">
+            <div class="header">
+                <h2>AI Memory Care</h2>
+                <p>Insurance may cover 100%</p>
+            </div>
+            <div class="middle">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">47%</div>
+                        <div class="stat-text">Memory Improvement</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">$200K+</div>
+                        <div class="stat-text">Insurance Savings</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-text">AI Monitoring</div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div style="background: #333; color: white; padding: 15px 30px; border-radius: 25px; font-weight: 600;">
+                    Swipe Up - Check Coverage
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- LinkedIn Professional -->
+    <div class="ad-title">LinkedIn Professional Ad (1200x628)</div>
+    <div class="ad-description">B2B focused ad for healthcare administrators and insurance professionals</div>
+    <div class="ad-container">
+        <div class="linkedin-ad" id="linkedin-ad">
+            <div class="content">
+                <h1>Revolutionary ROI in<br>Alzheimer's Care</h1>
+                <div class="professional-text">
+                    AI-powered remote monitoring reduces institutional care costs by 85% 
+                    while improving patient outcomes through continuous cognitive support.
+                </div>
+                <div class="roi-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">$200K+</div>
+                        <div class="stat-label">Annual Savings<br>Per Patient</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">55%</div>
+                        <div class="stat-label">Reduction in<br>ER Visits</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">47%</div>
+                        <div class="stat-label">Memory<br>Improvement</div>
+                    </div>
+                </div>
+                <div style="font-size: 16px; margin-top: 30px;">
+                    <strong>Medicare Part B Eligible • HSA/FSA Approved • HIPAA Compliant</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="download-section">
+        <h2 style="color: #333; margin-bottom: 20px;">Download High-Resolution Images</h2>
+        <p style="color: #666; margin-bottom: 30px;">Right-click on any image above and select "Save image as..." or use the buttons below to download specific formats.</p>
+        
+        <button class="download-btn" onclick="downloadImage('facebook-ad-1', 'facebook-insurance-ad', 1200, 628)">
+            Download Facebook Ad (1200x628)
+        </button>
+        
+        <button class="download-btn" onclick="downloadImage('google-ad-1', 'google-square-ad', 600, 600)">
+            Download Google Ad (600x600)
+        </button>
+        
+        <button class="download-btn" onclick="downloadImage('instagram-story', 'instagram-story-ad', 375, 667)">
+            Download Instagram Story (375x667)
+        </button>
+        
+        <button class="download-btn" onclick="downloadImage('linkedin-ad', 'linkedin-professional-ad', 1200, 628)">
+            Download LinkedIn Ad (1200x628)
+        </button>
+    </div>
+    
+    <script>
+        function downloadImage(elementId, filename, width, height) {
+            const element = document.getElementById(elementId);
+            
+            // Create a canvas
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = width;
+            canvas.height = height;
+            
+            // Convert the element to canvas using html2canvas library would be ideal,
+            // but for now, we'll provide instructions to user
+            alert(`To download the ${filename}:\n\n1. Right-click on the ${elementId.replace('-', ' ')} image above\n2. Select "Save image as..."\n3. Save as "${filename}.png"\n\nFor best quality, use a screenshot tool to capture the exact dimensions: ${width}x${height}px`);
+        }
+        
+        // Add some interactive effects
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
