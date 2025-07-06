@@ -1,13 +1,10 @@
 {
-  "name": "alzheimers-care-companionv2",
+  "name": "alzheimers-care-companion",
   "version": "2.0.0",
-  "description": "Alzheimer's Care Companion v2 - Compassionate support platform",
-  "main": "dist/index.js",
+  "description": "Alzheimer's Care Companion",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
     "start": "node dist/index.js"
   },
   "dependencies": {
@@ -16,8 +13,5 @@
   "devDependencies": {
     "vite": "^5.4.19",
     "esbuild": "^0.19.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
   }
 }
