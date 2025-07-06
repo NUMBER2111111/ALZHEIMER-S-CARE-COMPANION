@@ -1,17 +1,23 @@
 {
-  "name": "rest-express",
-  "version": "1.0.0",
+  "name": "alzheimers-care-companionv2",
+  "version": "2.0.0",
+  "description": "Alzheimer's Care Companion v2 - Compassionate support platform",
+  "main": "dist/index.js",
   "type": "module",
-  "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development tsx server/index.ts",
-    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
-    "start": "NODE_ENV=production node dist/index.js",
-    "check": "tsc",
-    "db:push": "drizzle-kit push"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.19",
+    "esbuild": "^0.19.0"
   },
   "engines": {
     "node": ">=18.0.0"
   }
-}
 }
